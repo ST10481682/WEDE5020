@@ -1,0 +1,349 @@
+/* =========================================
+   KAT'S FLORAL BLOSSOM BOUQUET
+   Main Website Style
+   ========================================= */
+
+/* Applies border-box sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Controls the overall appearance of the website */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF8F0;
+    color: #5A4646;
+    line-height: 1.7;
+}
+
+/* =========================================
+   NAVIGATION BAR
+   ========================================= */
+
+/* Styles the navigation bar */
+nav {
+    background-color: #F7D6DF;
+    padding: 18px 0;
+    box-shadow: 0 4px 12px rgba(120, 70, 80, 0.15);
+}
+
+/* Removes bullet points and centres the navigation list */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Places navigation items next to each other */
+nav ul li {
+    display: inline-block;
+    margin: 5px 6px;
+}
+
+/* Styles the navigation links */
+nav ul li a {
+    color: #6B4A55;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 11px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+/* Changes the navigation link when the mouse moves over it */
+nav ul li a:hover {
+    background-color: #E8B6C5;
+    color: #5A3D48;
+}
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+/* Controls the size and appearance of the main content area */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #FFFDF9;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(120, 90, 90, 0.12);
+}
+
+/* =========================================
+   HEADINGS
+   ========================================= */
+
+/* Styles the main heading */
+h1 {
+    text-align: center;
+    color: #A65370;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+/* Styles the second-level headings */
+h2 {
+    color: #B96F89;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 35px;
+}
+
+/* Styles the third-level headings */
+h3 {
+    color: #A65370;
+    font-size: 24px;
+}
+
+/* Styles paragraphs across the website */
+p {
+    font-size: 17px;
+    margin: 18px 0;
+}
+
+/* =========================================
+   IMPORTANT TEXT
+   ========================================= */
+
+/* Changes the colour of bold text */
+strong {
+    color: #B96F89;
+}
+
+/* =========================================
+   LISTS
+   ========================================= */
+
+/* Styles unordered lists inside the main content */
+main ul {
+    background-color: #F8E8EC;
+    padding: 25px 45px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(120, 90, 90, 0.10);
+}
+
+/* Styles the list items */
+main ul li {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+/* =========================================
+   HOME PAGE
+   ========================================= */
+
+/* Styles the first paragraph on the home page */
+body > p:first-of-type {
+    max-width: 1000px;
+    margin: 40px auto 25px;
+    padding: 35px;
+    background-color: #F7E1E6;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #8E5067;
+    box-shadow: 0 6px 20px rgba(120, 90, 90, 0.12);
+}
+
+/* Styles the second paragraph on the home page */
+body > p:nth-of-type(2) {
+    text-align: center;
+    color: #B96F89;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+/* Styles the third paragraph on the home page */
+body > p:nth-of-type(3) {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 8px;
+    color: #A8B89A;
+}
+
+/* Styles the fourth paragraph on the home page */
+body > p:nth-of-type(4) {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #F1EAF5;
+    padding: 25px 30px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+/* Styles selected paragraphs used as headings on the home page */
+body > p:nth-of-type(5),
+body > p:nth-of-type(7) {
+    text-align: center;
+    color: #A65370;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Centres the sixth and eighth paragraphs */
+body > p:nth-of-type(6),
+body > p:nth-of-type(8) {
+    text-align: center;
+}
+
+/* =========================================
+   FLOWER IMAGE SECTIONS
+   ========================================= */
+
+/* Centres the sections containing flower images */
+section {
+    text-align: center;
+    margin-top: 35px;
+    padding: 15px;
+}
+
+/* Styles the flower images */
+section img {
+    width: 25%;
+    height: 230px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 18px;
+    border: 4px solid #E8B6C5;
+    box-shadow: 0 6px 18px rgba(120, 90, 90, 0.18);
+    transition: 0.3s ease;
+}
+
+/* Adds an effect when the mouse moves over an image */
+section img:hover {
+    transform: scale(1.05);
+    border-color: #A8B89A;
+    box-shadow: 0 10px 25px rgba(120, 90, 90, 0.25);
+}
+
+/* =========================================
+   BOUQUETS AND OCCASIONS
+   ========================================= */
+
+/* Adds styling to paragraphs inside the main section */
+main > p {
+    background-color: #F8E8EC;
+    padding: 18px 22px;
+    border-radius: 15px;
+}
+
+/* Styles the first paragraph inside the main section */
+main > p:first-of-type {
+    background-color: transparent;
+    text-align: center;
+    color: #8E5067;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* =========================================
+   SAGE GREEN ACCENTS
+   ========================================= */
+
+/* Changes the colour of the bullet points in lists */
+main ul li::marker {
+    color: #A8B89A;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+/* Styles the footer at the bottom of the website */
+footer {
+    background-color: #D9E2D2;
+    color: #5A5148;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* Styles the paragraphs inside the footer */
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* =========================================
+   MOBILE VIEW
+   ========================================= */
+
+/* Adjusts the website layout for smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Adjusts the navigation bar on mobile */
+    nav {
+        padding: 12px 0;
+    }
+
+    /* Displays navigation items vertically on mobile */
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    /* Adjusts the navigation links for mobile screens */
+    nav ul li a {
+        display: block;
+        margin: 0 25px;
+    }
+
+    /* Adjusts the main content area for mobile screens */
+    main {
+        margin: 20px 10px;
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    /* Makes the main heading smaller on mobile */
+    h1 {
+        font-size: 29px;
+    }
+
+    /* Makes the second heading smaller on mobile */
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Makes the third heading smaller on mobile */
+    h3 {
+        font-size: 22px;
+    }
+
+    /* Adjusts paragraph text for mobile screens */
+    p {
+        font-size: 16px;
+    }
+
+    /* Adjusts the first home page paragraph for mobile */
+    body > p:first-of-type {
+        margin: 20px 10px;
+        padding: 25px 15px;
+        font-size: 21px;
+    }
+
+    /* Adjusts the image section on mobile */
+    section {
+        padding: 5px;
+    }
+
+    /* Makes images larger and displays them one below another on mobile */
+    section img {
+        width: 80%;
+        height: 220px;
+        display: block;
+        margin: 15px auto;
+    }
+
+    /* Adjusts list spacing on mobile */
+    main ul {
+        padding: 20px 30px;
+    }
+}
