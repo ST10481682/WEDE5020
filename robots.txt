@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /img/*.pdf
+
+# Replace the placeholder with the actual deployed website URL before submission.
+Sitemap: https://YOUR-DEPLOYED-DOMAIN/sitemap.xml

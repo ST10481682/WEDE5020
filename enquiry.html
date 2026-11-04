@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make an enquiry at Kat's Floral Blossom Bouquet in Nelspruit. Ask about handcrafted bouquets, event flowers, volunteering, sponsorship, pricing and availability.">
+    <meta name="keywords" content="flower enquiries Nelspruit, birthday bouquets, wedding flowers, graduation flowers, personalised bouquets, volunteering, sponsorship">
+    <meta name="author" content="Kat's Floral Blossom Bouquet">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Enquiries | Kat's Floral Blossom Bouquet">
+    <meta property="og:description" content="Ask about handcrafted bouquets, event flowers, pricing and availability in Nelspruit.">
+    <meta property="og:site_name" content="Kat's Floral Blossom Bouquet">
+    <meta name="theme-color" content="#F7D6DF">
+    <title>Enquiries | Kat's Floral Blossom Bouquet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav aria-label="Main navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="bouquets.html">Bouquets</a></li>
+        <li><a href="occasions.html">Occasions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquiries</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="enquiry-intro">
+        <h1>Make an Enquiry 💐</h1>
+        <p>Welcome to Kat's Floral Blossom Bouquet! We would love to help you find the perfect flowers for your special occasion. Whether you need a birthday bouquet, wedding flowers, graduation flowers or a personalised arrangement, please complete the enquiry form below.</p>
+    </section>
+
+    <section class="enquiry-form-section">
+        <h2>Enquiry Form 🌸</h2>
+        <p>Please provide your details and tell us what you are interested in. We will use this information to respond to your enquiry.</p>
+
+        <form id="enquiryForm" class="enquiry-form" name="floral-enquiry" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="floral-enquiry">
+            <p class="honeypot-field" hidden>
+                <label>Do not fill in this field: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+
+            <label for="enquiryName">Full Name:</label>
+            <input type="text" id="enquiryName" name="fullName" placeholder="Enter your full name" autocomplete="name" minlength="2" maxlength="80" required>
+
+            <label for="enquiryEmail">Email Address:</label>
+            <input type="email" id="enquiryEmail" name="email" placeholder="Enter your email address" autocomplete="email" maxlength="120" required>
+
+            <label for="enquiryPhone">Contact Number:</label>
+            <input type="tel" id="enquiryPhone" name="phone" placeholder="Enter your contact number" autocomplete="tel" pattern="[0-9+() -]{7,20}" minlength="7" maxlength="20" title="Enter a phone number using 7 to 20 digits, spaces or + ( ) - characters." required>
+
+            <label for="enquiryType">Type of Enquiry:</label>
+            <select id="enquiryType" name="enquiryType" required>
+                <option value="">Select an enquiry type</option>
+                <option value="Birthday bouquet">Birthday bouquet</option>
+                <option value="Wedding flowers">Wedding flowers</option>
+                <option value="Graduation flowers">Graduation flowers</option>
+                <option value="Romantic flowers">Romantic flowers</option>
+                <option value="Personalised bouquet">Personalised bouquet</option>
+                <option value="Event flowers">Event flowers</option>
+                <option value="Volunteering">Volunteering</option>
+                <option value="Sponsorship">Sponsorship</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="eventDate">Required Date (if applicable):</label>
+            <input type="date" id="eventDate" name="eventDate">
+
+            <label for="budget">Estimated Budget:</label>
+            <select id="budget" name="budget">
+                <option value="">Select your budget</option>
+                <option value="Below R300">Below R300</option>
+                <option value="R300 - R500">R300 - R500</option>
+                <option value="R500 - R1000">R500 - R1000</option>
+                <option value="R1000 - R2000">R1000 - R2000</option>
+                <option value="Above R2000">Above R2000</option>
+                <option value="Not sure yet">Not sure yet</option>
+            </select>
+
+            <label for="enquiryDetails">Additional Details:</label>
+            <textarea id="enquiryDetails" name="message" placeholder="Tell us more about the flowers or service you need..." minlength="10" maxlength="1500" required></textarea>
+
+            <button type="submit">Submit Enquiry 💐</button>
+            <p class="form-note">We will review your enquiry and contact you with information about availability, pricing and the next steps.</p>
+            <div id="enquiryMessage" class="form-response" role="status" aria-live="polite"></div>
+        </form>
+    </section>
+
+    <section class="enquiry-information">
+        <h2>Need More Information? 🌷</h2>
+        <p>If you have any questions before submitting your enquiry, you are welcome to contact us.</p>
+        <p><strong>Email:</strong> <a href="mailto:info@katsfloral.co.za">info@katsfloral.co.za</a></p>
+        <p><strong>Location:</strong> Nelspruit, 1200</p>
+        <p>We look forward to helping you make your special moments beautiful!</p>
+    </section>
+</main>
+<footer>
+    <p>&copy; <span id="currentYear">2026</span> Kat's Floral Blossom Bouquet. All rights reserved.</p>
+    <p>Beautiful flowers for every special moment 💐</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>

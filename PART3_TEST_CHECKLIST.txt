@@ -1,0 +1,26 @@
+KAT'S FLORAL BLOSSOM BOUQUET - PART 3 TEST CHECKLIST
+
+LOCAL TESTS (LIVE SERVER)
+[ ] All seven pages open from the navigation.
+[ ] Enquiries appears in every navigation menu.
+[ ] Images load on all pages.
+[ ] Bouquet search filters the existing gallery.
+[ ] Bouquet sort works A-Z and Z-A.
+[ ] Gallery images open in the lightbox.
+[ ] Lightbox previous/next, close and Escape controls work.
+[ ] Services FAQ opens and closes.
+[ ] Contact map loads with internet access.
+[ ] Contact form rejects missing/invalid fields.
+[ ] Enquiry form rejects missing/invalid fields and past dates.
+[ ] Local form success message explains that deployment is needed for actual submission.
+
+AFTER DEPLOYMENT
+[ ] Replace YOUR-DEPLOYED-DOMAIN in sitemap.xml and robots.txt.
+[ ] Enable Netlify Forms if deploying to Netlify.
+[ ] Submit a test Contact form and verify it in Netlify Forms.
+[ ] Submit a test Enquiry form and verify it in Netlify Forms.
+[ ] Verify business phone, WhatsApp number and street address.
+[ ] Verify the approximate map marker or update it to the confirmed public location.
+[ ] Add genuine image credits and social profile links where applicable.
+[ ] Commit and push the updated project to GitHub.
+[ ] Submit the GitHub repository URL to the LMS.
