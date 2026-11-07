@@ -1,26 +1,81 @@
-KAT'S FLORAL BLOSSOM BOUQUET - PART 3 TEST CHECKLIST
+# KAT'S FLORAL BLOSSOM BOUQUET – PART 3 TEST CHECKLIST
 
-LOCAL TESTS (LIVE SERVER)
-[ ] All seven pages open from the navigation.
+## LOCAL TESTS (LIVE SERVER)
+
+[ ] All seven pages open correctly from the navigation (if all seven pages are included).
+
 [ ] Enquiries appears in every navigation menu.
-[ ] Images load on all pages.
-[ ] Bouquet search filters the existing gallery.
-[ ] Bouquet sort works A-Z and Z-A.
-[ ] Gallery images open in the lightbox.
-[ ] Lightbox previous/next, close and Escape controls work.
-[ ] Services FAQ opens and closes.
-[ ] Contact map loads with internet access.
-[ ] Contact form rejects missing/invalid fields.
-[ ] Enquiry form rejects missing/invalid fields and past dates.
-[ ] Local form success message explains that deployment is needed for actual submission.
 
-AFTER DEPLOYMENT
-[ ] Replace YOUR-DEPLOYED-DOMAIN in sitemap.xml and robots.txt.
-[ ] Enable Netlify Forms if deploying to Netlify.
-[ ] Submit a test Contact form and verify it in Netlify Forms.
-[ ] Submit a test Enquiry form and verify it in Netlify Forms.
-[ ] Verify business phone, WhatsApp number and street address.
-[ ] Verify the approximate map marker or update it to the confirmed public location.
-[ ] Add genuine image credits and social profile links where applicable.
-[ ] Commit and push the updated project to GitHub.
-[ ] Submit the GitHub repository URL to the LMS.
+[ ] Images load correctly on all pages.
+
+[ ] Bouquet search filters the existing gallery.
+
+[ ] Bouquet sorting works A-Z and Z-A.
+
+[ ] Gallery images open in the lightbox.
+
+[ ] Lightbox previous, next, close and Escape controls work.
+
+[ ] Services FAQ opens and closes correctly.
+
+[ ] Contact map loads with an internet connection.
+
+[ ] Contact form rejects missing or invalid fields.
+
+[ ] Enquiry form rejects missing or invalid fields.
+
+[ ] Enquiry form prevents selecting past dates.
+
+[ ] Form validation displays appropriate success and error messages.
+
+[ ] Email application opens with the correct form information when submitting a valid form.
+
+## AFTER DEPLOYMENT (GITHUB PAGES)
+
+[ ] Confirm GitHub Pages is enabled.
+
+[ ] Confirm the live website opens successfully.
+
+[ ] Verify that all navigation links work.
+
+[ ] Verify that all images display correctly.
+
+[ ] Test bouquet search and sorting on the live website.
+
+[ ] Test the image gallery lightbox.
+
+[ ] Test the Services FAQ accordion.
+
+[ ] Confirm the contact map loads.
+
+[ ] Verify that robots.txt contains the correct deployed website address.
+
+[ ] Verify that sitemap.xml contains the correct deployed website address.
+
+[ ] Confirm that all sitemap pages actually exist.
+
+[ ] Verify the business email address, phone number and WhatsApp number.
+
+[ ] Verify the approximate map marker or update it to the confirmed public business location.
+
+[ ] Check that social sharing links work.
+
+[ ] Add genuine image credits and social media profile links where applicable.
+
+[ ] Check that the website works on desktop and mobile devices.
+
+[ ] Check the README file for the website proposal, project information and Part 3 changelog.
+
+[ ] Commit and push all final changes to GitHub.
+
+[ ] Verify that the GitHub repository is public.
+
+[ ] Submit the GitHub repository URL and live website URL to the Rosebank LMS.
+
+## IMPORTANT FORM SUBMISSION NOTE
+
+The website is hosted on GitHub Pages. GitHub Pages does not provide built-in form processing.
+
+The current JavaScript uses mailto to open the visitor's email application. Visitors must send the prepared email themselves.
+
+Automatic form storage and submission would require an external form-processing service.

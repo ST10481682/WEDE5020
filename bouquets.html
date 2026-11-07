@@ -1,71 +1,216 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Explore fresh, handcrafted and personalised bouquets from Kat's Floral Blossom Bouquet.">
-    <title>Bouquets - Kat's Floral Blossom Bouquet</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <meta name="keywords" content="flower bouquets Nelspruit, handcrafted bouquets, personalised flowers, fresh floral arrangements">
+
+    <meta name="author" content="Kat's Floral Blossom Bouquet">
+
     <meta property="og:type" content="website">
     <meta property="og:title" content="Bouquets - Kat's Floral Blossom Bouquet">
     <meta property="og:description" content="Browse handcrafted and personalised flower bouquets from Kat's Floral Blossom Bouquet in Nelspruit. Find floral inspiration for gifts and special moments.">
     <meta property="og:site_name" content="Kat's Floral Blossom Bouquet">
+
     <meta name="theme-color" content="#F7D6DF">
-    <meta name="author" content="Kat's Floral Blossom Bouquet">
+
+    <title>Bouquets - Kat's Floral Blossom Bouquet</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<nav aria-label="Main navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="bouquets.html" aria-current="page">Bouquets</a></li>
-        <li><a href="occasions.html">Occasions</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="enquiry.html">Enquiries</a></li>
-<main>
 
-    <h1>🌸 OUR BOUQUETS 🌸💐</h1>
-    <section class="bouquet-introduction">
-        <h2>🌷 Beautiful Flowers for Every Special Moment 🌷</h2>
-        <p>At Kat’s Floral Blossom Bouquet, every bouquet is carefully created with love, creativity and attention to detail. 🌷💐 We use beautiful, fresh flowers to create arrangements that are colourful, elegant and perfect for making someone feel special. 🌹🌸</p>
-        <p>What makes our bouquets special is that we believe every flower tells a story. 🌺 Our bouquets can be personalised to match your style, favourite colours and preferences. Whether you prefer something simple and elegant or bright and colourful, we can create a bouquet just for you. 💕💐</p>
-    </section>
-    <section class="bouquet-features">
-        <h2>What Makes Our Bouquets Special?</h2>
-        <article><h3>🌷 Fresh &amp; Beautiful Flowers</h3><p>We choose fresh flowers to make sure every bouquet looks beautiful and lasts longer. 🌸</p></article>
-        <article><h3>💐 Handcrafted With Care</h3><p>Each bouquet is carefully arranged by hand, making every design unique. 🌹</p></article>
-        <article><h3>🌺 Personalised Designs</h3><p>Customers can choose colours, flowers and special touches to create a bouquet that feels personal. 🌷</p></article>
-        <article><h3>🎁 Beautiful Presentation</h3><p>Our bouquets are wrapped and presented beautifully, making them ready to give as a thoughtful gift. 💕🌸</p></article>
-        <article><h3>🌹 Made With Love</h3><p>At Kat’s Floral Blossom Bouquet, we put love and care into every arrangement because we want our flowers to make every moment more meaningful. 💐🌷🌸</p></article>
-    </section>
-    <p class="slogan">🌸 Fresh flowers. Beautiful bouquets. Made with love.</p>
+    <!-- Main Navigation -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="bouquets.html" aria-current="page">Bouquets</a></li>
+            <li><a href="occasions.html">Occasions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Enquiries</a></li>
+        </ul>
+    </nav>
 
-    <section class="bouquet-tools" aria-label="Search and sort bouquets">
-        <h2>Find a Bouquet 🌷</h2>
-        <label for="bouquetSearch">Search the bouquet gallery</label>
-        <input type="search" id="bouquetSearch" placeholder="Search by bouquet description..." autocomplete="off">
-        <label for="bouquetSort">Sort bouquets</label>
-        <select id="bouquetSort">
-            <option value="default">Original order</option>
-            <option value="az">Description: A to Z</option>
-            <option value="za">Description: Z to A</option>
-        </select>
-        <p id="bouquetResults" class="search-results" role="status" aria-live="polite">Showing all bouquets.</p>
-    </section>
-    <section id="bouquetGallery" class="bouquet-images image-gallery">
-        <img loading="lazy" decoding="async" src="img/bouquet-1.jpeg" alt="Beautiful handcrafted bouquet">
-<img loading="lazy" decoding="async" src="img/bouquet-4.jpeg" alt="Colourful flower bouquet">
-<img loading="lazy" decoding="async" src="img/bouquet-5.jpeg" alt="Fresh floral bouquet">
-</section>
-    <p class="page-cta">Ready to choose your flowers? <a href="contact.html">Contact us about an order.</a></p>
+    <!-- Main Content -->
+    <main>
 
-</main>
-<footer>
-    <p>&copy; <span id="currentYear">2026</span> Kat's Floral Blossom Bouquet. All rights reserved.</p>
-    <p>Nelspruit, 1200 | <a href="mailto:info@katsfloral.co.za">info@katsfloral.co.za</a></p>
-</footer>
+        <h1>🌸 OUR BOUQUETS 🌸💐</h1>
+
+        <!-- Bouquet Introduction -->
+        <section class="bouquet-introduction">
+
+            <h2>🌷 Beautiful Flowers for Every Special Moment 🌷</h2>
+
+            <p>
+                At Kat’s Floral Blossom Bouquet, every bouquet is carefully
+                created with love, creativity and attention to detail. 🌷💐
+                We use beautiful, fresh flowers to create arrangements that
+                are colourful, elegant and perfect for making someone feel
+                special. 🌹🌸
+            </p>
+
+            <p>
+                What makes our bouquets special is that we believe every flower
+                tells a story. 🌺 Our bouquets can be personalised to match your
+                style, favourite colours and preferences. Whether you prefer
+                something simple and elegant or bright and colourful, we can
+                create a bouquet just for you. 💕💐
+            </p>
+
+        </section>
+
+        <!-- Bouquet Features -->
+        <section class="bouquet-features">
+
+            <h2>What Makes Our Bouquets Special?</h2>
+
+            <article>
+                <h3>🌷 Fresh &amp; Beautiful Flowers</h3>
+                <p>
+                    We choose fresh flowers to make sure every bouquet looks
+                    beautiful and lasts longer. 🌸
+                </p>
+            </article>
+
+            <article>
+                <h3>💐 Handcrafted With Care</h3>
+                <p>
+                    Each bouquet is carefully arranged by hand, making every
+                    design unique. 🌹
+                </p>
+            </article>
+
+            <article>
+                <h3>🌺 Personalised Designs</h3>
+                <p>
+                    Customers can choose colours, flowers and special touches
+                    to create a bouquet that feels personal. 🌷
+                </p>
+            </article>
+
+            <article>
+                <h3>🎁 Beautiful Presentation</h3>
+                <p>
+                    Our bouquets are wrapped and presented beautifully,
+                    making them ready to give as a thoughtful gift. 💕🌸
+                </p>
+            </article>
+
+            <article>
+                <h3>🌹 Made With Love</h3>
+                <p>
+                    At Kat’s Floral Blossom Bouquet, we put love and care into
+                    every arrangement because we want our flowers to make
+                    every moment more meaningful. 💐🌷🌸
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Business Slogan -->
+        <p class="slogan">
+            🌸 Fresh flowers. Beautiful bouquets. Made with love.
+        </p>
+
+        <!-- Search and Sorting Tools -->
+        <section class="bouquet-tools" aria-label="Search and sort bouquets">
+
+            <h2>Find a Bouquet 🌷</h2>
+
+            <label for="bouquetSearch">Search the bouquet gallery</label>
+
+            <input
+                type="search"
+                id="bouquetSearch"
+                placeholder="Search by bouquet description..."
+                autocomplete="off"
+            >
+
+            <label for="bouquetSort">Sort bouquets</label>
+
+            <select id="bouquetSort">
+                <option value="default">Original order</option>
+                <option value="az">Description: A to Z</option>
+                <option value="za">Description: Z to A</option>
+            </select>
+
+            <p
+                id="bouquetResults"
+                class="search-results"
+                role="status"
+                aria-live="polite"
+            >
+                Showing all bouquets.
+            </p>
+
+        </section>
+
+        <!-- Bouquet Image Gallery -->
+        <section
+            id="bouquetGallery"
+            class="bouquet-images image-gallery"
+            aria-label="Bouquet image gallery"
+        >
+
+            <img
+                loading="lazy"
+                decoding="async"
+                src="img/bouquet-1.jpeg"
+                alt="Beautiful handcrafted bouquet"
+            >
+
+            <img
+                loading="lazy"
+                decoding="async"
+                src="img/bouquet-4.jpeg"
+                alt="Colourful flower bouquet"
+            >
+
+            <img
+                loading="lazy"
+                decoding="async"
+                src="img/bouquet-5.jpeg"
+                alt="Fresh floral bouquet"
+            >
+
+        </section>
+
+        <!-- Contact Call to Action -->
+        <p class="page-cta">
+            Ready to choose your flowers?
+            <a href="contact.html">Contact us about an order.</a>
+        </p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; <span id="currentYear">2026</span>
+            Kat's Floral Blossom Bouquet. All rights reserved.
+        </p>
+
+        <p>
+            Nelspruit, 1200 |
+            <a href="mailto:info@katsfloral.co.za">
+                info@katsfloral.co.za
+            </a>
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
     <script src="script.js" defer></script>
+
 </body>
 </html>
+```

@@ -1,6 +1,21 @@
 /*
+  KAT'S FLORAL BLOSSOM BOUQUET
+  WEBSITE SECURITY HEADERS
+
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://*.tile.openstreetmap.org; font-src 'self' data: https://unpkg.com; connect-src 'self' https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+  Content-Security-Policy:
+  default-src 'self';
+  script-src 'self' https://unpkg.com;
+  style-src 'self' 'unsafe-inline' https://unpkg.com;
+  img-src 'self' data: https://*.tile.openstreetmap.org;
+  font-src 'self' data: https://unpkg.com;
+  connect-src 'self' https://*.tile.openstreetmap.org;
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
+  frame-ancestors 'none';
+*/

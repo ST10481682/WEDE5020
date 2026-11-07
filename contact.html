@@ -1,117 +1,200 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Contact Kat's Floral Blossom Bouquet in Nelspruit for bouquet orders and enquiries.">
-    <title>Contact - Kat's Floral Blossom Bouquet</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <meta name="keywords" content="contact florist Nelspruit, Kat's Floral Blossom Bouquet, flower orders, floral questions">
+
+    <meta name="author" content="Kat's Floral Blossom Bouquet">
+
     <meta property="og:type" content="website">
     <meta property="og:title" content="Contact - Kat's Floral Blossom Bouquet">
     <meta property="og:description" content="Contact Kat's Floral Blossom Bouquet in Nelspruit about handcrafted bouquets, floral services, delivery and general questions.">
     <meta property="og:site_name" content="Kat's Floral Blossom Bouquet">
+
     <meta name="theme-color" content="#F7D6DF">
-    <meta name="author" content="Kat's Floral Blossom Bouquet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+    <title>Contact - Kat's Floral Blossom Bouquet</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet Map CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    >
 </head>
+
 <body>
-<nav aria-label="Main navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="bouquets.html">Bouquets</a></li>
-        <li><a href="occasions.html">Occasions</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-        <li><a href="enquiry.html">Enquiries</a></li>
-<main>
 
-    <h1>Get in Touch With Us 💐</h1>
-    <section class="contact-introduction">
-        <h2>We Would Love to Hear From You</h2>
-        <p>We’d love to hear from you! Have a question, need help choosing a bouquet, or want to place an order? Send us a message and we’ll get back to you.</p>
-    </section>
-    <section class="contact-information">
-        <article class="contact-item">
-            <h2>📍 Visit Us</h2>
-            <p>123 Blossom Street<br>Nelspruit, 1200</p>
-        </article>
-        <article class="contact-item">
-            <h2>📞 Phone</h2>
-            <p><a href="tel:0721234567">072 123 4567</a></p>
-        </article>
-        <article class="contact-item">
-            <h2>✉️ Email</h2>
-            <p><a href="mailto:info@katsfloral.co.za">info@katsfloral.co.za</a></p>
-        </article>
-    </section>
-    <section class="contact-hours">
-        <h2>🕐 Opening Hours</h2>
-        <p>Monday – Friday: 08:00 – 17:00<br>Saturday: 08:00 – 13:00<br>Sunday: Closed</p>
-    </section>
-    <section class="contact-form-section">
-        <h2>Send Us a Message</h2>
-        <p>Complete the form below with your details and enquiry or bouquet order.</p>
-        <form id="contactForm" class="contact-form" name="contact-message" action="/" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact-message">
-            <p class="honeypot-field" hidden>
-                <label>Do not fill in this field: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+    <!-- Main Navigation -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="bouquets.html">Bouquets</a></li>
+            <li><a href="occasions.html">Occasions</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+            <li><a href="enquiry.html">Enquiries</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Contact Introduction -->
+        <h1>Get in Touch With Us 💐</h1>
+
+        <section class="contact-introduction">
+
+            <h2>We Would Love to Hear From You</h2>
+
+            <p>
+                We’d love to hear from you! Have a question, need help choosing
+                a bouquet, or want to place an order? Send us a message and
+                we’ll get back to you.
             </p>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" autocomplete="email" maxlength="120" required>
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9+() -]{7,20}" minlength="7" maxlength="20" title="Enter a phone number using 7 to 20 digits, spaces or + ( ) - characters." required>
-            <label for="messageType">Type of Message</label>
-            <select id="messageType" name="messageType" required>
-                <option value="">Select a message type</option>
-                <option value="General question">General question</option>
-                <option value="Bouquet order">Bouquet order</option>
-                <option value="Delivery question">Delivery question</option>
-                <option value="Feedback">Feedback</option>
-                <option value="Other">Other</option>
-            </select>
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="5" minlength="10" maxlength="1500" placeholder="Write your full message here..." required></textarea>
-            <button type="submit">Send Message 💐</button>
-            <div id="contactMessage" class="form-response" role="status" aria-live="polite"></div>
-        </form>
-        <p class="form-note">Use this form for general questions, feedback or messages. We will respond using the contact details you provide.</p>
-    </section>
-    <section class="whatsapp-contact">
-        <h2>Chat With Us</h2>
-        <p>Have a quick question? Contact us on WhatsApp.</p>
-        <a class="whatsapp-button" href="https://wa.me/27721234567?text=Hello%20Kat%27s%20Floral%20Blossom%20Bouquet" target="_blank" rel="noopener noreferrer">Chat With Us on WhatsApp</a>
-        <p class="form-note">Replace the number in this link with the business's confirmed WhatsApp number if it is different.</p>
-    </section>
 
-    <section class="location-section">
-        <h2>Find Us in Nelspruit 📍</h2>
-        <p>The map shows the general Nelspruit area. It is an approximate area marker, not a confirmed shop address.</p>
-        <div id="businessMap" class="business-map" role="region" aria-label="Map showing the approximate Nelspruit area"></div>
-        <p class="map-credit">Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>.</p>
-    </section>
-    <section class="social-share">
-        <h2>Share Our Flower Shop 🌸</h2>
-        <p>Help others discover Kat's Floral Blossom Bouquet.</p>
-        <a class="share-button" id="facebookShare" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener noreferrer">Share on Facebook</a>
-        <a class="share-button" id="whatsappShare" href="https://wa.me/?text=" target="_blank" rel="noopener noreferrer">Share on WhatsApp</a>
-    </section>
-    <section class="contact-images image-gallery">
-        <h2>Our Flowers</h2>
-        <img loading="lazy" decoding="async" src="img/contact.jpeg" alt="Contact flower arrangement">
-<img loading="lazy" decoding="async" src="img/contact-3.jpeg" alt="Fresh flower arrangement">
-<img loading="lazy" decoding="async" src="img/contact-2.jpeg" alt="Floral bouquet">
-</section>
+        </section>
 
-</main>
-<footer>
-    <p>&copy; <span id="currentYear">2026</span> Kat's Floral Blossom Bouquet. All rights reserved.</p>
-    <p>Nelspruit, 1200 | <a href="mailto:info@katsfloral.co.za">info@katsfloral.co.za</a></p>
-</footer>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
-<script src="script.js" defer></script>
-</body>
-</html>
+        <!-- Contact Information -->
+        <section class="contact-information">
+
+            <article class="contact-item">
+                <h2>📍 Visit Us</h2>
+                <p>123 Blossom Street<br>Nelspruit, 1200</p>
+            </article>
+
+            <article class="contact-item">
+                <h2>📞 Phone</h2>
+                <p>
+                    <a href="tel:0721234567">072 123 4567</a>
+                </p>
+            </article>
+
+            <article class="contact-item">
+                <h2>✉️ Email</h2>
+                <p>
+                    <a href="mailto:info@katsfloral.co.za">
+                        info@katsfloral.co.za
+                    </a>
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Opening Hours -->
+        <section class="contact-hours">
+
+            <h2>🕐 Opening Hours</h2>
+
+            <p>
+                Monday – Friday: 08:00 – 17:00<br>
+                Saturday: 08:00 – 13:00<br>
+                Sunday: Closed
+            </p>
+
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+
+            <h2>Send Us a Message</h2>
+
+            <p>
+                Complete the form below with your details and enquiry
+                or bouquet order.
+            </p>
+
+            <form id="contactForm" class="contact-form">
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    minlength="2"
+                    maxlength="80"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    maxlength="120"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    pattern="[0-9+() -]{7,20}"
+                    minlength="7"
+                    maxlength="20"
+                    title="Enter a phone number using 7 to 20 digits, spaces or + ( ) - characters."
+                    required
+                >
+
+                <label for="messageType">Type of Message</label>
+
+                <select id="messageType" name="messageType" required>
+
+                    <option value="">Select a message type</option>
+                    <option value="General question">General question</option>
+                    <option value="Bouquet order">Bouquet order</option>
+                    <option value="Delivery question">Delivery question</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+
+                </select>
+
+                <label for="message">Your Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    minlength="10"
+                    maxlength="1500"
+                    placeholder="Write your full message here..."
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message 💐</button>
+
+                <div
+                    id="contactMessage"
+                    class="form-response"
+                    role="status"
+                    aria-live="polite"
+                ></div>
+
+            </form>
+
+            <p class="form-note">
+                Use this form for general questions, feedback or messages.
+                Your default email application will open with your message
+                prepared for sending.
+            </p>
+
+        </section>
+
+        <!-- WhatsApp Contact -->
