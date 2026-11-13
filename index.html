@@ -1,158 +1,205 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Shop handcrafted flower bouquets in Nelspruit for birthdays, weddings, anniversaries and special moments. Discover floral arrangements made with care by Kat's Floral Blossom Bouquet.">
-
-    <meta name="keywords" content="flower shop Nelspruit, handcrafted flower bouquets, birthday flowers, wedding flowers, fresh flowers">
-
-    <meta name="author" content="Kat's Floral Blossom Bouquet">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Home - Kat's Floral Blossom Bouquet">
-    <meta property="og:description" content="Shop handcrafted flower bouquets in Nelspruit for birthdays, weddings, anniversaries and special moments. Discover floral arrangements made with care by Kat's Floral Blossom Bouquet.">
-    <meta property="og:site_name" content="Kat's Floral Blossom Bouquet">
-
-    <meta name="theme-color" content="#F7D6DF">
-
-    <title>Home - Kat's Floral Blossom Bouquet</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>IT SOP Portal | Medical Research Facility</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Main Navigation -->
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="bouquets.html">Bouquets</a></li>
-            <li><a href="occasions.html">Occasions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="enquiry.html">Enquiries</a></li>
-        </ul>
-    </nav>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">IT SOP Portal</div>
 
-    <!-- Main Content -->
-    <main>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#security">IT Security SOP</a>
+            <a href="#acceptable-use">Acceptable Use Policy</a>
+            <a href="#acquisition">IT Acquisition SOP</a>
+            <a href="#helpdesk">Help Desk SOP</a>
+            <a href="#contact">Contact &amp; Support</a>
+        </nav>
+    </header>
 
-        <h1>Kat's Floral Blossom Bouquet</h1>
-
-        <!-- Welcome Section -->
-        <section class="home-welcome">
-
-            <h2>Welcome to Our Flower Shop 🌸</h2>
+    <!-- Welcome Banner -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Welcome to the</h2>
+            <h1>IT SOP Portal</h1>
 
             <p>
-                Welcome to Kat’s Floral Blossom Bouquet. Where every bouquet
-                is made with love and every flower tells a story. 💐
+                Your centralised source for IT policies, procedures
+                and support documentation at the Medical Research Facility.
             </p>
+
+            <div class="hero-line"></div>
+
+            <p class="hero-small">
+                Access the information you need, when you need it —
+                within two clicks.
+            </p>
+        </div>
+    </section>
+
+    <!-- Policy Cards -->
+    <main class="container">
+
+        <section class="services">
+
+            <article class="service-card security" id="security">
+                <div class="icon">♙</div>
+                <h3>IT Security SOP</h3>
+                <p>Protecting our data, systems and people.</p>
+                <a href="#security-details" class="arrow">→</a>
+            </article>
+
+            <article class="service-card acceptable" id="acceptable-use">
+                <div class="icon">▤</div>
+                <h3>Acceptable Use Policy</h3>
+                <p>Guidelines for responsible use of IT resources.</p>
+                <a href="#acceptable-details" class="arrow">→</a>
+            </article>
+
+            <article class="service-card acquisition" id="acquisition">
+                <div class="icon">▣</div>
+                <h3>IT Acquisition SOP</h3>
+                <p>Request, approve and manage IT equipment and software.</p>
+                <a href="#acquisition-details" class="arrow">→</a>
+            </article>
+
+            <article class="service-card helpdesk" id="helpdesk">
+                <div class="icon">☏</div>
+                <h3>Help Desk SOP</h3>
+                <p>Get technical support and log a service request.</p>
+                <a href="#helpdesk-details" class="arrow">→</a>
+            </article>
+
+            <article class="service-card contact" id="contact">
+                <div class="icon">✉</div>
+                <h3>Contact &amp; Support</h3>
+                <p>Reach the IT department for assistance.</p>
+                <a href="#contact-details" class="arrow">→</a>
+            </article>
 
         </section>
 
-        <!-- About Our Flowers -->
-        <section class="home-about">
+        <!-- About and Quick Links -->
+        <section class="information">
 
-            <h2>🌸 ABOUT OUR FLOWERS 🌸</h2>
+            <div class="about">
+                <h2>About the SOP Portal</h2>
 
-            <p class="decorative-flowers">🌷 🌸 💐 🌺 🌼</p>
+                <p>
+                    The Medical Research Facility is committed to maintaining
+                    a secure, efficient and compliant IT environment. This
+                    portal provides easy access to our Standard Operating
+                    Procedures (SOPs) and key IT documentation, helping all
+                    staff work safely and effectively with our technology
+                    resources.
+                </p>
 
-            <p>
-                We create beautiful, fresh and handcrafted bouquets with love,
-                bringing colour, beauty and joy to every special moment.
-                From elegant roses to vibrant seasonal flowers, our bouquets
-                are carefully arranged to make every occasion bloom. 💐🌷🌹
-            </p>
+                <div class="benefits">
+                    <div class="benefit">
+                        <span>♧</span>
+                        <p>Improve<br>Compliance</p>
+                    </div>
+
+                    <div class="benefit">
+                        <span>◷</span>
+                        <p>Increase<br>Efficiency</p>
+                    </div>
+
+                    <div class="benefit">
+                        <span>♧</span>
+                        <p>Support<br>Our People</p>
+                    </div>
+
+                    <div class="benefit">
+                        <span>↗</span>
+                        <p>Enable Research<br>Excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="quick-links">
+                <h2>Quick Links</h2>
+
+                <a href="#documents">
+                    <span>▤</span> View All SOP Documents
+                    <b>→</b>
+                </a>
+
+                <a href="#security">
+                    <span>▤</span> IT Security Guidelines
+                    <b>→</b>
+                </a>
+
+                <a href="#acquisition">
+                    <span>▤</span> IT Equipment Request Form
+                    <b>→</b>
+                </a>
+
+                <a href="#helpdesk">
+                    <span>▤</span> Help Desk Ticket System
+                    <b>→</b>
+                </a>
+
+                <a href="#contact-details">
+                    <span>▤</span> IT Department Contact Details
+                    <b>→</b>
+                </a>
+            </aside>
 
         </section>
 
-        <!-- Contact Section -->
-        <section class="home-action">
+        <!-- Policy Information Sections -->
+        <section class="details" id="documents">
+            <h2>IT Policies and Procedures</h2>
+            <p>Select a policy above or use the links below to learn more.</p>
 
-            <h2>CONTACT US</h2>
+            <article id="security-details">
+                <h3>IT Security SOP</h3>
+                <p>Guidelines for protecting facility information,
+                   user accounts, computer systems and network resources.</p>
+            </article>
 
-            <p>
-                Get in touch with us for beautiful flowers made just for you.
-            </p>
+            <article id="acceptable-details">
+                <h3>Acceptable Use Policy</h3>
+                <p>Rules for the responsible and appropriate use of
+                   organisational computers, email and internet services.</p>
+            </article>
 
-            <a class="text-link" href="contact.html">Contact us</a>
+            <article id="acquisition-details">
+                <h3>IT Acquisition SOP</h3>
+                <p>Procedures for requesting, evaluating, approving and
+                   purchasing IT equipment and software.</p>
+            </article>
 
-        </section>
+            <article id="helpdesk-details">
+                <h3>Help Desk SOP</h3>
+                <p>Steps for reporting technical problems, creating support
+                   requests and tracking service issues.</p>
+            </article>
 
-        <!-- Order Online Section -->
-        <section class="home-action">
-
-            <h2>ORDER ONLINE</h2>
-
-            <p>
-                Choose your favourite bouquet and let us make your special
-                moment blossom. 🌸
-            </p>
-
-            <a class="text-link" href="bouquets.html">
-                Explore our bouquets
-            </a>
-
-            <p class="decorative-flowers">🌹 🌷 🌸 💐 🌺 🌼</p>
-
-        </section>
-
-        <!-- Flower Shop Images -->
-        <section class="home-images image-gallery">
-
-            <h2>Explore Our Flower Shop</h2>
-
-            <img
-                loading="lazy"
-                decoding="async"
-                src="img/shop.jpeg"
-                alt="Flower shop display"
-            >
-
-            <img
-                loading="lazy"
-                decoding="async"
-                src="img/shop-2.jpeg"
-                alt="Flower arrangements in the shop"
-            >
-
-            <img
-                loading="lazy"
-                decoding="async"
-                src="img/shop-3.jpeg"
-                alt="Selection of flowers"
-            >
-
+            <article id="contact-details">
+                <h3>Contact &amp; Support</h3>
+                <p>Email: it.support@researchfacility.example</p>
+                <p>Office: Medical Research Facility IT Department</p>
+                <p>Replace these sample details with the facility's
+                   official contact information.</p>
+            </article>
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer>
-
         <p>
-            &copy; <span id="currentYear">2026</span>
-            Kat's Floral Blossom Bouquet. All rights reserved.
+            &copy; 2026 Medical Research Facility |
+            IT SOP Portal | All Rights Reserved
         </p>
-
-        <p>
-            Nelspruit, 1200 |
-            <a href="mailto:info@katsfloral.co.za">
-                info@katsfloral.co.za
-            </a>
-        </p>
-
     </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js" defer></script>
 
 </body>
 </html>
-```
